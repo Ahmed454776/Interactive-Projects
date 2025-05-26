@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HVAC</title>
+
+  <!-- tailwind css -->
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- nav and hero section -->
+  <header class="w-full mx-auto">
+    <div class="bg-green-900">
+      <div class="bg-green-900 py-3">
+        <nav
+          class="container w-[95%] mx-auto my-2 rounded-4xl py-2 pr-3 pl-7 bg-white flex justify-between items-center">
+          <div class="logo text-[#0B5D1E] text-[32px] hover:cursor-pointer">
+            CoolQuest
+          </div>
+          <ul class="text-[18px] text-[#1A1A1A] font-semibold flex gap-5">
+            <li class="hover:transition  duration-300 ease-in-out hover:text-green-400"><a href="#">About Us</a></li>
+            <li class="hover:transition  duration-300 ease-in-out hover:text-green-400"><a href="#">Services</a></li>
+            <li class="hover:transition  duration-300 ease-in-out hover:text-green-400"><a href="#">Past Work</a></li>
+            <li class="hover:transition  duration-300 ease-in-out hover:text-green-400"><a href="#">Reviews</a></li>
+          </ul>
+          <button class="text-white text-[18px] font-semibold px-5 py-2 bg-[#0B5D1E] rounded-4xl hover:bg-green-500 hover:cursor-pointer hover:transition duration-300 ease-in-out">
+            Get Free Quote
+          </button>
+        </nav>
+        <section id="hero">
+          <div class="container mx-auto w-[95%] py-16 flex gap-14 justify-between items-center">
+            <div class="text-white w-1/2">
+              <!-- hero title -->
+              <div class="text-[64px] leading-16 py-8">
+                Reliable HVAC for Every Season
+              </div>
+              <div class="text-white text-lg">
+                <div class="flex items-center gap-2">
+                  <img class="w-6 h-6" src="./Images/certified-icon.png" alt="no icon">
+                  <div>Certified & Experienced Technicians</div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img class="w-6 h-6" src="./Images/alarm-clock-icon.png" alt="no icon">
+                  <div>Fast, Reliable Service</div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <img class="w-6 h-6" src="./Images/hot-price-icon.png" alt="no icon">
+                  <div>Transparent, Affordable Pricing</div>
+                </div>
+              </div>
+              <!-- hero form -->
+              <div class="my-8">
+                <form class="inline-block bg-white rounded-2xl p-3" action="#">
+                  <div class="w-full flex gap-3">
+                    <input class="py-2 px-4 border-2 border-green-800 rounded-2xl text-black" type="text"
+                      placeholder="Enter Your Name">
+                    <input class="py-2 px-4 border-2 border-green-800 rounded-2xl text-black" type="number"
+                      placeholder="Enter Your Number">
+                  </div>
+                  <div class="w-full flex gap-5 pt-3">
+                    <select class="w-[214px] py-2 px-4 border-2 border-green-800 rounded-2xl text-black"
+                      placeholder="Service">
+                      <option value="">Services</option>
+                      <option value="">Sports</option>
+                      <option value="">Sports</option>
+                    </select>
+                    <button class="text-white text-2xl py-1 bg-green-800 block w-6/12 rounded-2xl hover:bg-green-500 cursor-pointer transition duration-600  ease-in-out"
+                      type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- Certified Installer section -->
+              <div>
+                <div class="text-white text-[16px]">Certified Installer</div>
+                <div class="flex items-center gap-12 mt-3">
+                  <img src="./Images/GAF.png" alt="no image">
+                  <img src="./Images/LENNOX.png" alt="no image">
+                  <img src="./Images/Amirican-standard.png" alt="no image">
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <!-- hero main image -->
+              <div class="bg-white h-[400px] rounded-tl-full text-green-900 relative">
+                <img class="absolute bottom-0 w-full" src="./Images/hero-model.png" alt="no image">
+                <!-- warranty logo -->
+                <img class="absolute -top-12 -left-4" src="./Images/warranty.png" alt="no logo">
+                <div
+                  class="px-10 py-2 text-black bg-white border-4 border-gray-300 rounded-md inline absolute bottom-3 left-8">
+                  <div class="flex justify-center"><img class="w-8 h-8" src="./Images/google.png" alt="no image"></div>
+                  <div class="text-lg">4.8 <span class="text-gray-500">(698)</span></div>
+                </div>
+                <!-- export license -->
+                <div
+                  class="px-10 py-2 text-black bg-white border-4 border-gray-300 rounded-md inline absolute top-3 right-5">
+                  <div class="flex justify-center"><img class="w-8 h-8" src="./Images/shield-02.png" alt="no image"></div>
+                  <div class="text-lg">C20-987654</div>
+                </div>
+              </div>
+              <!-- hero content -->
+              <div class="w-full mt-3 flex gap-3">
+                <!-- this is content 1 -->
+                <div class="w-1/2 rounded-bl-lg">
+                  <div class="relative inline">
+                    <img class="w-full h-48" src="./Images/hero-more-image-1.jpg" alt="no image">
+                    <div class="absolute bottom-0 right-0 bg-green-800 text-white text-lg px-4 py-2 hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out hover:underline">View Details</div>
+                  </div>
+                </div>
+                <!-- this is content 2 -->
+                <div class="w-1/2 rounded-bl-lg">
+                  <div class="relative inline">
+                    <img class="w-full h-48" src="./Images/hero-more-image-2.jpg" alt="no image">
+                    <div class="absolute bottom-0 right-0 bg-green-800 text-white text-lg px-4 py-2 hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out
+                    hover:underline">View Details</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+  <!-- user feedback section -->
+  <section id="user-feedback" class="bg-white">
+    <div class="container w-[95%] mx-auto my-24 mt-36">
+      <!-- this is main title -->
+      <div class="text-black text-5xl font-bold text-center mb-12">Trusted by Families Like Yours</div>
+      <div class="flex justify-center items-center gap-6">
+        <div class="w-md py-3.5 px-16 rounded-3xl shadow-2xl">
+          <!-- this is user image -->
+          <div class="flex justify-center"><img class="rounded-full text-center w-16 h-16"
+              src="./Images/user-feedback-1.jpg" alt="no image">
+          </div>
+          <!--  this is user name -->
+          <div class="text-center text-lg py-2">Mason Carter</div>
+          <div class="flex items-center justify-center gap-1.5">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+          </div>
+          <p class="text-center text-sm text-[#666666] py-4">
+            “Super professional service, quick installation, and everything works perfectly. Highly recommend!”
+          </p>
+          <!-- this is google review part -->
+          <div class="py-3">
+            <div class="flex justify-center"><img class="w-8 h-8 " src="./Images/google.png" alt="no image"></div>
+            <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
+          </div>
+        </div>
+        <div class="w-md py-3.5 px-16 rounded-3xl shadow-2xl bg-[#0B5D1E] text-white">
+          <!-- this is user image -->
+          <div class="flex justify-center"><img class="rounded-full text-center w-16 h-16"
+              src="./Images/user-feedback-2.jpg" alt="no image">
+          </div>
+          <!--  this is user name -->
+          <div class="text-center text-lg py-2">Chloe Anderson</div>
+          <div class="flex items-center justify-center gap-1.5">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+          </div>
+          <p class="text-center text-sm text-gray-400 py-4">
+            “Very happy with their work! The team was efficient and the new system runs great.”
+          </p>
+          <div class="py-3">
+            <div class="flex justify-center"><img class="w-8 h-8 " src="./Images/google.png" alt="no image"></div>
+            <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
+          </div>
+        </div>
+        <div class="w-md py-3.5 px-16 rounded-3xl shadow-2xl">
+          <div class="flex justify-center"><img class="rounded-full text-center w-16 h-16"
+              src="./Images/user-feedback-3.jpg" alt="no image">
+          </div>
+          <div class="text-center text-lg py-2">Skylar Bennett</div>
+          <div class="flex items-center justify-center gap-1.5">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+            <img class="" src="./Images/start-icon.png" alt="no icon">
+          </div>
+          <p class="text-center text-sm text-[#666666] py-4">
+            “Great experience from start to finish. Honest pricing and top-notch service!”
+          </p>
+          <div class="py-3">
+            <div class="flex justify-center"><img class="w-8 h-8 " src="./Images/google.png" alt="no image"></div>
+            <div class="w-full text-sm text-center pt-2">Reviewed on Google</div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center pt-12">
+        <button class="py-4 px-12 bg-green-800 rounded-lg text-white text-lg hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out hover:underline">View more</button>
+      </div>
+  </section>
+  <!-- certificate section -->
+  <section>
+    <div class="container mx-auto w-[95%] bg-white my-24 mt-40">
+      <!-- this is title -->
+      <div class="font-bold text-center text-5xl">Your Trusted HVAC Experts</div>
+      <!-- certificates -->
+      <div class="flex flex-col justify-center items-center gap-10 mt-14">
+        <!-- 1st line -->
+        <div class="flex justify-center items-center gap-14">
+          <div class="flex flex-col justify-center items-center">
+            <img class="w-[100px]" src="./Images/ISO-logo-9001.png" alt="no image">
+            <div class="text-center text-lg font-normal">ISO 9001 Certified</div>
+            <div class="text-center text-sm text-[#666666]">Quality Management for HVAC Excellence</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./Images/ISO-logo-2.png" alt="no image">
+            <div class="text-center text-lg font-normal">ISO 14001 Certification</div>
+            <div class="text-center text-sm text-[#666666]">Eco-Friendly HVAC Solutions</div>
+          </div>
+        </div>
+        <!-- 2nd line -->
+        <div class="flex justify-center items-center gap-14">
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./Images/EPA-certificate.png" alt="no image">
+            <div class="text-center text-lg font-normal">EPA Certified</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./Images/BBA-certificate.png" alt="no image">
+            <div class="text-center text-lg font-normal">BBB Accredited</div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img class="h-[100px]" src="./Images/NATE-certificate.png" alt="no image">
+            <div class="text-center text-lg font-normal">NATE Certified</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- benefit section -->
+  <section>
+    <div class="mx-auto w-full bg-[#EBFFF1] mt-48 py-20">
+      <div class="text-5xl font-bold text-center text-black mb-14">The Benefits of Choosing Us</div>
+      <!-- card holder -->
+      <div class="container mx-auto w-[95%] flex gap-8 items-center justify-center">
+        <!-- card 1 -->
+        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+          <img class="w-20 h-20 mb-5" src="./Images/clock-03.png" alt="no image">
+          <div class="text-2xl text-center mb-1.5 font-medium">24/7 Emergency Services</div>
+          <div class="text-sm text-[#666666] text-center">Fast and reliable emergency HVAC services available 24/7.
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+          <img class="w-20 h-20 mb-5" src="./Images/labor.png" alt="no image">
+          <div class="text-2xl text-center mb-1.5 font-medium">Experienced Professionals</div>
+          <div class="text-sm text-[#666666] text-center">Highly trained and certified HVAC experts with years of
+            industry experience.</div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-md py-8 px-14 rounded-tr-xl rounded-bl-xl bg-white flex flex-col justify-center items-center">
+          <img class="w-20 h-20 mb-5" src="./Images/dollar-circle.png" alt="no image">
+          <div class="text-2xl text-center mb-1.5 font-medium">Affordable Pricing</div>
+          <div class="text-sm text-[#666666] text-center">Transparent and competitive pricing with no hidden fees.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  past work section -->
+  <section>
+    <div class="container mx-auto my-20 w-[92.5%]">
+      <!-- card holder -->
+      <div class="grid grid-cols-2 flex-row justify-center gap-8">
+        <!-- card 1 -->
+        <div class="">
+          <!-- title -->
+          <div class="text-5xl font-bold">Past Work That Speaks for Itself</div>
+          <p class="text-lg text-[#666666] mt-10">Explore some of the outstanding HVAC projects we’ve proudly completed.
+            Every image reflects our unwavering commitment to quality, reliability, and expert craftsmanship — from
+            flawless installations to seamless maintenance. These are just a few examples of the exceptional results we
+            deliver for homeowners like you.</p>
+          <button class="py-3 px-10 mt-20 bg-green-800 rounded-lg text-white text-lg hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out hover:underline">Explore Our Work</button>
+        </div>
+        <!-- card 2 -->
+        <div class=" bg-[#0B5D1E] rounded-2xl px-6 py-6">
+          <h1 class="text-white text-2xl font-medium py-2.5">Efficient Home Heating Upgrade</h1>
+          <p class="text-sm text-white w-11/12">Installed a high-efficiency furnace system, reducing energy costs and
+            improving comfort for the homeowners.</p>
+          <img class="rounded-xl w-full mt-6" src="./Images/past-work-1.png" alt="no image">
+        </div>
+        <!-- card 3 -->
+        <div class=" bg-[#0B5D1E] rounded-2xl px-6 py-6">
+          <h1 class="text-white text-2xl font-medium py-2.5">Complete HVAC System Installation</h1>
+          <p class="text-sm text-white w-11/12">Designed and installed a full heating and cooling solution for a newly
+            built modern home.</p>
+          <img class="rounded-xl w-full mt-6" src="./Images/past-work-2.png" alt="no image">
+        </div>
+        <!-- card 4 -->
+        <div class=" bg-[#0B5D1E] rounded-2xl px-6 py-6">
+          <h1 class="text-white text-2xl font-medium py-2.5">Emergency AC Repair & Restoration</h1>
+          <p class="text-sm text-white w-11/12">Rapid response service that restored cooling during peak summer heat,
+            ensuring family comfort and safety.</p>
+          <img class="rounded-xl w-full mt-6" src="./Images/past-work-3.png" alt="no image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- save big section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-28">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">Save Big on Your Next HVAC Project</div>
+      <div class="flex justify-center gap-10">
+        <!-- card 1 -->
+        <div class="w-2/3 relative rounded-2xl bg-[url(./Images/save-big-1.jpg)] bg-cover bg-center h-96 grayscale-50">
+          <div class="w-2/3 absolute bottom-5 left-6">
+            <button class="py-4 px-12 bg-[#EBFFF1] rounded-lg text-[#0B5D1E] text-lg mb-3 hover:cursor-pointer hover:text-green-500 transition duration-600  ease-in-out">Hot Offer</button>
+            <div class="text-2xl text-white font-medium py-4">Get $500 OFF New HVAC System Installation!</div>
+            <div class="text-sm text-white">Upgrade your comfort and save big! Get an instant $500 OFF when you install
+              a brand-new, energy-efficient HVAC system — limited time only!</div>
+          </div>
+          <div></div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-1/3 rounded-2xl h-96 bg-[url(./Images/save-big-2.jpg)] bg-cover bg-center">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- bring comfort section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">How We Bring Comfort to Your Home</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-5">
+        <!-- card 1 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./Images/bc-c-1.jpg)] bg-cover bg-center relative shadow-2xl">
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./Images/calendar-03.png" alt="icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./Images/bc-c-2.jpg)] bg-cover bg-center relative overflow-hidden shadow-2xl">
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./Images/license.png" alt="no icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./Images/bc-c-3.jpg)] bg-cover bg-center relative shadow-2xl">
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./Images/wrench-01.png" alt="no icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="w-1/4 rounded-xl border-8 border-[#EBFFF1] h-96 bg-[url(./Images/bc-c-4.jpg)] bg-cover bg-center relative shadow-2xl">
+          <div class="absolute z-20 bottom-28 left-2.5 bg-[#0B5D1E] rounded-xl px-4 py-2.5">
+            <img class="w-6 h-6" src="./Images/home-09.png" alt="no icon">
+          </div>
+          <div class="p-3.5 px-5 bg-[#EBFFF1] absolute bottom-0 left-0">
+            <div class="text-lg text-[#1A1A1A]">Schedule a Consultation</div>
+            <div class="text-sm w-11/12 text-[#666666]">Contact us to book your free consultation with our HVAC experts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- HVAC Services section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">Our HVAC Services</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-7 my-9">
+        <!-- card 1 -->
+        <div class="w-1/3">
+          <div class="w-full h-80 rounded-2xl bg-[url(./Images/services-c-1.jpg)] bg-cover bg-center"></div>
+          <div class="py-4">
+            <div class="text-2xl mb-2.5">Air Conditioner Installation</div>
+            <div class="text-sm text-[#666666]">Stay cool all summer with fast, professional AC installations built to
+              last.</div>
+          </div>
+          <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out hover:underline"><a href="#">Explore Service</a></button>
+        </div>
+        <!-- card 2 -->
+        <div class="w-1/3">
+          <div class="w-full h-80 rounded-2xl bg-[url(./Images/services-c-2.jpg)] bg-cover "></div>
+          <div class="py-4">
+            <div class="text-2xl mb-2.5">Heating System Repair</div>
+            <div class="text-sm text-[#666666]">Keep your home warm and safe with expert repair services for any heating
+              system.</div>
+          </div>
+          <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out hover:underline"><a href="#">Explore Service</a></button>
+        </div>
+        <!-- card 3 -->
+        <div class="w-1/3">
+          <div class="w-full h-80 rounded-2xl bg-[url(./Images/services-c-3.jpg)] bg-cover bg-center"></div>
+          <div class="py-4">
+            <div class="text-2xl mb-2.5">Indoor Air Quality Solutions</div>
+            <div class="text-sm text-[#666666]">Breathe cleaner, healthier air with advanced filtration and ventilation
+              systems.</div>
+          </div>
+          <button class="bg-[#0B5D1E] py-3 px-7 text-white rounded-xl hover:cursor-pointer hover:bg-green-500 transition duration-600  ease-in-out hover:underline"><a href="#">Explore Service</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- people section -->
+  <section>
+    <div class="container w-[93%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">Meet the People Behind the Work</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-7 my-9">
+        <!-- card 1 -->
+        <div class="w-2/4">
+          <div class="rounded-lg bg-[url(./Images/meet-pepple.jpg)] bg-cover h-96 w-full"></div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-1/4 border-2 h-64 border-[#0B5D1E] rounded-xl px-4 flex flex-col justify-center gap-8">
+          <div class="text-sm text-[#666666]">“My mission is simple — to give every homeowner reliable, efficient
+            comfort they can count on, every day.”</div>
+          <div>
+            <div class="text-2xl text-[#0B5D1E]">James Carter</div>
+            <div class="text-sm text-[#666666] mt-2.5">Founder & Senior HVAC Specialist</div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-1/4 border-2 h-64 border-[#0B5D1E] rounded-xl px-4 flex flex-col justify-center gap-8">
+          <div class="text-sm text-[#666666]">“I’m here to ensure every project runs smoothly and every customer feels
+            heard, respected, and happy with our work.”</div>
+          <div>
+            <div class="text-2xl text-[#0B5D1E]">Michael Torres</div>
+            <div class="text-sm text-[#666666] mt-2.5">Operations Manager & Customer Care Lead</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- HVAC Insights -->
+  <section>
+    <div class="container w-[88%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-10">HVAC Insights</div>
+      <!-- cards -->
+      <div class="flex items-center justify-center gap-9 my-9">
+        <!-- card 1 -->
+        <div class="w-1/3 rounded-2xl relative h-[485px] shadow-2xl">
+          <div class="rounded-t-lg bg-[url(./Images/insights-c-1.jpg)] bg-cover h-80 w-full"></div>
+          <div class="bg-white rounded-b-2xl absolute z-30 bottom-0 w-full">
+            <div class="text-sm text-[#666666] mb-4 px-4">25 Apr 2025</div>
+            <div class="text-2xl px-4">5 Signs Your AC Needs Maintenance</div>
+            <hr class="mt-6">
+            <div class="text-lg py-3.5 px-4 hover:underline"><a href="#">Read More</a></div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="w-1/3 rounded-2xl relative h-[485px] shadow-2xl">
+          <div class="rounded-t-lg bg-[url(./Images/insights-c-2.jpg)] bg-cover h-80 w-full"></div>
+          <div class="bg-white rounded-b-2xl absolute z-30 bottom-0 w-full">
+            <div class="text-sm text-[#666666] mb-4 px-4 pt-2.5">25 Apr 2025</div>
+            <div class="text-2xl px-4">How to Save on Heating Bills This Winter</div>
+            <hr class="mt-6">
+            <div class="text-lg py-3.5 px-4 hover:underline"><a href="#">Read More</a></div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="w-1/3 rounded-2xl relative h-[485px] shadow-2xl">
+          <div class="rounded-t-lg bg-[url(./Images/insights-c-3.jpg)] bg-cover h-80 w-full"></div>
+          <div class="bg-white rounded-b-2xl absolute z-30 bottom-0 w-full">
+            <div class="text-sm text-[#666666] mb-4 px-4 py-3">25 Apr 2025</div>
+            <div class="text-2xl px-4">The Best Thermostat Settings for Comfort & Efficiency</div>
+            <hr class="mt-6">
+            <div class="text-lg py-3.5 px-4 hover:underline"><a href="#">Read More</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center mt-16">
+        <button type="submit" class="text-[16px] cursor-pointer text-white px-6 py-2.5 bg-[#0B5D1E] rounded-lg hover:bg-green-500 transition duration-600  ease-in-out hover:underline"><a
+            href="#">Explore All Articles</a></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!--  Areas section -->
+  <section>
+    <div class="container w-[90%] mx-auto my-32">
+      <!-- title -->
+      <div class="text-5xl font-bold text-center mb-14">Areas We Serve</div>
+      <div class="flex flex-wrap items-center justify-between gap-11">
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]  ">Los Angeles</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Charlotte</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Kansas City</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Denver</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Las Vegas</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Phoenix</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Sacramento</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">San Francisco</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">San Jose</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">San Diego</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Orlando</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Tampa</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Chicago</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Raleigh</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Indianapolis</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Jacksonville</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">Atlanta</div>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 py-2.5 px-7 rounded-4xl border-2 border-[#0B5D1E] hover:cursor-pointer hover:bg-green-400 transition duration-600 ease-in-out">
+          <img class="w-6 h-6" src="./Images/location-03.png" alt="no image">
+          <div class="text-[#0B5D1E]">San Antonio</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer starts -->
+  <section>
+    <div class="bg-[#0B5D1E]">
+      <div class="container w-[92%] mx-auto">
+        <div class="pt-5 text-white">
+          <div class="rounded-2xl bg-white p-3.5 flex items-center justify-between my-10">
+            <input class="border-none w-8/12 placeholder:text-2xl" type="text"
+              placeholder="Let us help you choose the perfect system for your home.">
+            <div class="text-white bg-[#0B5D1E] py-2.5 px-6 rounded-xl">Free HVAC Estimate</div>
+          </div>
+
+          <div class="flex justify-between gap-28">
+            <!-- card 1 -->
+            <div class="">
+              <div class="text-5xl ">CoolQuest</div>
+              <div class="py-5 text-sm">Trusted local HVAC experts delivering reliable heating and cooling solutions.
+              </div>
+              <!-- social icons -->
+              <div class="flex items-center gap-3.5">
+                <a href="#"><img class="w-8 h-8" src="./Images/Facebook.png" alt="no image"></a>
+                <a href="#"><img class="w-8 h-8" src="./Images/twitter.png" alt="no image"></a>
+                <a href="#"><img class="w-8 h-8" src="./Images/linkedin.png" alt="no image"></a>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="flex justify-center">
+              <div class="flex flex-col gap-4">
+                <a class="text-2xl" href="#">Quick links</a>
+                <a class="text-lg" href="#">Home</a>
+                <a class="text-lg" href="#">Services</a>
+                <a class="text-lg" href="#">About</a>
+                <a class="text-lg" href="#">Contact</a>
+                <a class="text-lg" href="#">FAQs</a>
+              </div>
+            </div>
+            <!-- card 3 -->
+             <div class="flex flex-col gap-4">
+              <div class="flex items-center gap-2.5">
+                <img class="w-6 h-6" src="./Images/call-02.png" alt="no image">
+                <div class="text-[16px]">(555) 123-4567</div>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <img class="w-6 h-6" src="./Images/mail-02.png" alt="no image">
+                <div class="text-[16px]">mail.coolquest.com</div>
+              </div>
+              <div class="flex gap-2.5">
+                <img class="w-6 h-6" src="./Images/location-06.png" alt="no image">
+                <div class="text-[16px]">1234 Maplewood Drive, Houston,<br> TX 77002, United States</div>
+              </div>
+             </div>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <hr class="bg-white border-none h-0.5 mt-10">
+        <div id="footer-bottom" class="text-white text-center text-[16px] py-8">
+          &copy; 2025 all rights resereved
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+
+</html>
