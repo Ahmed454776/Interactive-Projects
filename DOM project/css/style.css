@@ -1,0 +1,145 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    .logo {
+      width: 150px;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+    header {
+      background: url('') no-repeat center center/cover;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .search-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .search-container input {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .search-container button {
+      padding: 10px;
+      border: none;
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .recipes-section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .recipes-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .recipe-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-content {
+      padding: 15px;
+    }
+
+    .recipe-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .recipe-description {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .recipe-card button {
+      align-self: flex-start;
+      margin: 0 15px 15px;
+      padding: 8px 12px;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .recipe-card img {
+        height: 160px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .recipes-title {
+        font-size: 1.4rem;
+      }
+
+      .recipe-title {
+        font-size: 1rem;
+      }
+
+      .recipe-description {
+        font-size: 0.85rem;
+      }
+    }
