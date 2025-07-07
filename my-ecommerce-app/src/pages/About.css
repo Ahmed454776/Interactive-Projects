@@ -1,0 +1,32 @@
+/* About.css */
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+}

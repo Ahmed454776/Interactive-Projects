@@ -1,0 +1,50 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: opacity 0.2s ease;
+  position: relative;
+}
+
+.navbar-link:hover {
+  opacity: 0.8;
+}
+
+.cart-badge {
+  background-color: #ef4444;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  margin-left: 0.35rem;
+  font-weight: bold;
+  position: relative;
+  top: -2px;
+}
